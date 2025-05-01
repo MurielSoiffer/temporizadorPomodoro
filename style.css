@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Angkor&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(172, 233, 255); /* Necesario porque usamos transparent: true */
+    overflow: hidden;
+    font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.titulo{
+    width: 90%;
+    margin: 15px 0px;
+    font-family: "Angkor", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.titulo h1{
+    color: red;
+    font-size: 60px;
+    margin: 0;
+    margin: -30px 0;
+}
+.titulo h3{
+    color: rgb(22, 171, 22);
+    font-size: 27px;
+    margin: 0;
+}
+.tomate{
+    width: 50%;
+    height: auto;
+}
+.cesped{
+    position: absolute;
+    top: 250px;
+    height: 370px;
+    width: 140%;
+    background-color: rgb(127, 224, 127);
+    border-radius: 100%;
+    z-index: -1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+    width: 70%;
+}
+form .trabajo{
+    width: 100%;
+    font-size: 20px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+form .cant-pomodoros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+}
+form .cant-pomodoros input{
+    width: 20%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+form  input[type=submit] {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 8px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+}
+form input{
+    font-family: "Abel", sans-serif;
+}
