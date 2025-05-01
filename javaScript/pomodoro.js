@@ -3,4 +3,8 @@ const trabajo = sessionStorage.getItem('trabajo');
 
   // Mostrar los datos
   document.getElementById('tr').textContent = trabajo;
-  document.getElementById('cantP').textContent = cantP;
+  // document.getElementById('cantP').textContent = cantP;
+
+  //---------------------------------------------------------
+
+  

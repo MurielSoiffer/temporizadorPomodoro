@@ -5,7 +5,7 @@ const createWindow = () => {
       width: 400,
       height: 500,
       backgroundColor: '#ffffff',
-      resizable: false,
+      // resizable: false,
       autoHideMenuBar: true,
     })
   

@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/pomodoro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body class="body">
-        <h3 id="tr">Temporizador</h3>
-        <h1 id="cantP">Pomodoro</h1>
-    <script src="pomodoro.js"></script>
+<body>
+    <div class="titulo">
+        <h1 id="tr" class="green">Temporizador</h1>
+        <h3 class="red">Pomodoro</h3>
+    </div>
+    <img class="tomate" src="img/tomato.gif" alt="">
+    <div class="cesped"></div>
+    <p id="temporizador">05:00</p>
+    <div class="controles">
+        <p>.........</p>
+        <button id="iniciar" class="btnPause">
+            <div class="play desaparecer"><i class='bx bx-play' style='color:#ffffff'></i></div>
+            <div class="pause"><i class='bx bx-pause' style='color:#ffffff'  ></i></div>
+        </button>
+        <a href="" id="inicio">saltar...</a>
+    </div>
+    <script src="javaScript/pomodoro.js"></script>
+    <script src="javaScript/pausar.js"></script>
 </body>
 </html>

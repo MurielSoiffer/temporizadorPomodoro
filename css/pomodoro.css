@@ -1,0 +1,53 @@
+.desaparecer{
+    display: none;
+}
+
+.titulo{
+    font-family: "Angkor", serif;
+    text-align: center;
+}
+.titulo h1{ 
+    margin: 0;
+    font-size: 60px;
+    margin-bottom: -30px;
+    margin-top: -10px;
+}
+.titulo h3{
+    margin: 0;
+    font-size: 27px;
+}
+
+#temporizador{
+    margin: 0;
+    color: white;
+    font-size: 80px;
+    font-family: "Abel", sans-serif;
+    margin-top: -30px;
+    margin-bottom: 5px;
+}
+.btnPause{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.btnPause i{
+    font-size: 50px;
+}
+.controles{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.controles a{
+    font-size: 20px;
+}
+.controles p{
+    margin: 0;
+    font-size: 22px;
+    color: rgba(255, 0, 0, 0);
+}

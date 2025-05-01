@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
-<body class="body">
+<body>
     <div class="titulo">
-        <h3>Temporizador</h3>
-        <h1>Pomodoro</h1>
+        <h3 class="green">Temporizador</h3>
+        <h1 class="red">Pomodoro</h1>
     </div>
-    <img class="tomate" src="tomato.gif" alt="">
+    <img class="tomate" src="img/tomato.gif" alt="">
     <form id="formulario">
-        <label>
-            <input type="text" placeholder="Trabajo..." class="trabajo" name="trabajo" required>
-            <label for="cantPomo" class="cant-pomodoros">Cantidad pomodoros: <input id="cantPomo" type="number" min="1" name="cantPomo" placeholder="1"required></label>
-        </label>
+        <input type="text" placeholder="Trabajo..." id="form-trabajo" name="trabajo" required>
+        <label for="cantPomo" class="cant-pomodoros">Cantidad pomodoros: <input id="form-cantPomo" type="number" min="1" name="cantPomo" placeholder="1"required></label>
         <input type="submit" value="Empezar">
     </form>
     <div class="cesped"></div>
-    <script src="proyecto.js"></script>
+    <script src="javaScript/proyecto.js"></script>
 </body>
 </html>

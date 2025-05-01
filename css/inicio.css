@@ -1,0 +1,62 @@
+
+.titulo{
+    width: 90%;
+    margin: 15px 0px;
+    font-family: "Angkor", serif;
+}
+.titulo h1{ 
+    margin: 0;
+    font-size: 60px;
+    margin: -30px 0;
+}
+
+.titulo h3{
+    margin: 0;
+    font-size: 27px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+    width: 70%;
+}
+#form-trabajo{
+    width: 100%;
+    font-size: 20px;
+    padding: 7px 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+form .cant-pomodoros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+}
+#form-cantPomo{
+    width: 20%;
+    padding: 10px 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+form  input[type=submit] {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 8px 28px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+}
+form input{
+    font-family: "Abel", sans-serif;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
