@@ -12,14 +12,14 @@
         <h1>Pomodoro</h1>
     </div>
     <img class="tomate" src="tomato.gif" alt="">
-    <form action="">
-        <label >
-            <input type="text" placeholder="Trabajo..." class="trabajo">
-            <label for="" class="cant-pomodoros">Cantidad pomodoros: <input type="number" min="1" name="" placeholder="1" id=""></label>
+    <form id="formulario">
+        <label>
+            <input type="text" placeholder="Trabajo..." class="trabajo" name="trabajo" required>
+            <label for="cantPomo" class="cant-pomodoros">Cantidad pomodoros: <input id="cantPomo" type="number" min="1" name="cantPomo" placeholder="1"required></label>
         </label>
         <input type="submit" value="Empezar">
     </form>
     <div class="cesped"></div>
-    
+    <script src="proyecto.js"></script>
 </body>
 </html>
