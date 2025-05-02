@@ -1,11 +1,13 @@
-let tiempo = 300; 
+let tiempo = 5; 
 let intervalo;
 let pause = false;
+let dia = true;
 const mostrar = document.getElementById("temporizador");
 const boton = document.getElementById("iniciar");
 const botonPausar = document.querySelector(".pause");
 const botonContinuar = document.querySelector(".play");
-
+const cuerpo = document.querySelector("body");
+const texto = document.querySelector("h3");
 
   const cuentaRegresiva = setInterval(() => {
 
@@ -15,15 +17,26 @@ const botonContinuar = document.querySelector(".play");
     const formatoMinutos = minutos.toString().padStart(2, '0');
     const formatoSegundos = segundos.toString().padStart(2, '0');
 
-    mostrar.textContent = `${formatoMinutos}:${formatoSegundos}`;
-
-    if (tiempo === 0) {
-      clearInterval(cuentaRegresiva);
-      mostrar.textContent = "¡Tiempo terminado!";
-    }
     if(pause == false){
       tiempo--;
     }
+    mostrar.textContent = `${formatoMinutos}:${formatoSegundos}`;
+    if (tiempo < 0) {
+      if(dia == true){
+        dia = false;
+        tiempo = 10;
+        cuerpo.className ="descanso";
+        texto.innerHTML = "Descanso";
+      }
+      else{
+        dia = true
+        tiempo = 20;
+        cuerpo.className ="";
+        texto.innerHTML = "Pomodoro";
+      }
+    }
+    
+    
   }, 1000);
 
   boton.addEventListener("click", pausar)

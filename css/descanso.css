@@ -1,0 +1,18 @@
+.descanso{
+    background-color: rgb(115, 159, 209);
+}
+.descanso .cesped{
+    background-color: rgb(90, 161, 90);
+}
+.descanso .tomate{
+    display: none;
+}
+.taza{
+    display: none;
+}
+.descanso .taza{
+    display: inline;
+    width: 58%;
+    margin-top: -10px;
+    margin-bottom: -25px;
+}
