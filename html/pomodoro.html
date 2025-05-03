@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title class="temporizador">25:00</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/pomodoro.css">
-    <link rel="stylesheet" href="css/descanso.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/pomodoro.css">
+    <link rel="stylesheet" href="../css/descanso.css">
+    <link rel="shortcut icon" href="../img/tomato.gif" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -14,9 +15,9 @@
         <h1 id="tr" class="green">Temporizador</h1>
         <h3 class="texto red">Pomodoro</h3>
     </div>
-    <img class="img tomate" src="img/tomato.gif" alt="">
-    <img class="img taza" src="img/cafe.gif" alt="">
-    <p id="temporizador">05:00</p>
+    <img class="img tomate" src="../img/tomato.gif" alt="">
+    <img class="img taza" src="../img/cafe.gif" alt="">
+    <p class="temporizador">25:00</p>
     <div class="cesped"></div>
     <div class="controles">
         <p>.........</p>
@@ -24,9 +25,8 @@
             <div class="play desaparecer"><i class='bx bx-play' style='color:#ffffff'></i></div>
             <div class="pause"><i class='bx bx-pause' style='color:#ffffff'  ></i></div>
         </button>
-        <a href="" id="inicio">saltar...</a>
+        <a id="saltar">saltar...</a>
     </div>
-    <script src="javaScript/pomodoro.js"></script>
-    <script src="javaScript/pausar.js"></script>
+    <script src="../js/pomodoro.js"></script>
 </body>
 </html>

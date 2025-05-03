@@ -5,11 +5,16 @@ const createWindow = () => {
       width: 400,
       height: 500,
       backgroundColor: '#ffffff',
+      icon: __dirname + '/img/tomate.png',
+      webPreferences: {
+        nodeIntegration: true,
+        contextIsolation: false
+      },
       // resizable: false,
       autoHideMenuBar: true,
     })
   
-    win.loadFile('index.html')
+    win.loadFile('html/index.html')
   }
 
   app.whenReady().then(() => {

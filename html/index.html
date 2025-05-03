@@ -2,23 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Temporizador Pomodoro</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="icon" type="image/png" href="../img/tomate.png" />
 </head>
 <body>
     <div class="titulo">
         <h3 class="green">Temporizador</h3>
         <h1 class="red">Pomodoro</h1>
     </div>
-    <img class="img" src="img/tomato.gif" alt="">
+    <img class="img" src="../img/tomato.gif" alt="">
     <form id="formulario">
         <input type="text" placeholder="Trabajo..." id="form-trabajo" name="trabajo" required>
         <label for="cantPomo" class="cant-pomodoros">Cantidad pomodoros: <input id="form-cantPomo" type="number" min="1" name="cantPomo" placeholder="1"required></label>
         <input type="submit" value="Empezar">
     </form>
     <div class="cesped"></div>
-    <script src="javaScript/proyecto.js"></script>
+    <script src="../js/proyecto.js"></script>
 </body>
 </html>
